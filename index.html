@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>答案之书</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game" aria-label="答案之书小游戏">
+      <section class="stage">
+        <div class="ambient ambient-one"></div>
+        <div class="ambient ambient-two"></div>
+
+        <div class="book-wrap">
+          <div class="book" id="book" aria-live="polite">
+            <div class="cover">
+              <p class="cover-en">The Book of Answers</p>
+              <p class="cover-tags">情绪自救 / 停止内耗 / 化解焦虑 / 自我疗愈</p>
+              <div class="cover-frame" aria-hidden="true">
+                <span class="cover-corner cover-corner-a"></span>
+                <span class="cover-corner cover-corner-b"></span>
+                <span class="cover-corner cover-corner-c"></span>
+                <span class="cover-corner cover-corner-d"></span>
+                <h1>答案<br />之书</h1>
+              </div>
+              <p class="prompt">解答你的内心疑惑！</p>
+            </div>
+
+            <div class="pages">
+              <div class="page page-left" aria-hidden="true">
+                <span class="page-line"></span>
+                <span class="page-line short"></span>
+                <span class="page-ornament"></span>
+              </div>
+              <div class="page page-right">
+                <p class="answer-label">这一页写着</p>
+                <p class="answer" id="answer">答案正在页缝里等你。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button class="primary-button" id="reveal" type="button">
+            <span class="button-icon" aria-hidden="true">✦</span>
+            翻一页
+          </button>
+          <button class="ghost-button" id="reset" type="button">合上书</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
