@@ -12,8 +12,37 @@
         <div class="ambient ambient-one"></div>
         <div class="ambient ambient-two"></div>
 
-        <div class="book-wrap">
+        <div class="book-wrap" id="bookWrap">
           <div class="book" id="book" aria-live="polite">
+            <div class="pages">
+              <div class="page page-left" aria-hidden="true">
+                <div class="inner-border">
+                  <p class="left-kicker">这一页的征兆</p>
+                  <div class="motif" id="motif" data-theme="quiet">
+                    <span class="motif-mark motif-large">心</span>
+                    <span class="motif-mark motif-small motif-a">静</span>
+                    <span class="motif-mark motif-small motif-b">光</span>
+                    <span class="motif-mark motif-small motif-c">问</span>
+                  </div>
+                  <p class="left-note" id="leftNote">把问题放轻一点，答案会慢慢显影。</p>
+                </div>
+              </div>
+
+              <div class="page page-right">
+                <div class="inner-border answer-panel">
+                  <p class="answer-label">这一页写着</p>
+                  <p class="answer" id="answer">答案正在页缝里等你。</p>
+                </div>
+              </div>
+
+              <div class="flutter-stack" aria-hidden="true">
+                <span class="flutter-page flutter-one"></span>
+                <span class="flutter-page flutter-two"></span>
+                <span class="flutter-page flutter-three"></span>
+                <span class="flutter-page flutter-four"></span>
+              </div>
+            </div>
+
             <div class="cover">
               <p class="cover-en">The Book of Answers</p>
               <p class="cover-tags">情绪自救 / 停止内耗 / 化解焦虑 / 自我疗愈</p>
@@ -24,19 +53,7 @@
                 <span class="cover-corner cover-corner-d"></span>
                 <h1>答案<br />之书</h1>
               </div>
-              <p class="prompt">解答你的内心疑惑！</p>
-            </div>
-
-            <div class="pages">
-              <div class="page page-left" aria-hidden="true">
-                <span class="page-line"></span>
-                <span class="page-line short"></span>
-                <span class="page-ornament"></span>
-              </div>
-              <div class="page page-right">
-                <p class="answer-label">这一页写着</p>
-                <p class="answer" id="answer">答案正在页缝里等你。</p>
-              </div>
+              <p class="prompt">对纠结的人生说“再见”</p>
             </div>
           </div>
         </div>
@@ -44,9 +61,9 @@
         <div class="controls">
           <button class="primary-button" id="reveal" type="button">
             <span class="button-icon" aria-hidden="true">✦</span>
-            翻一页
+            翻开一页
           </button>
-          <button class="ghost-button" id="reset" type="button">合上书</button>
+          <button class="ghost-button" id="reset" type="button" disabled>合上书</button>
         </div>
       </section>
     </main>
